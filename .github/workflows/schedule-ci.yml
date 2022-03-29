@@ -1,0 +1,12 @@
+name: API - Stress Tests
+
+on:
+  schedule:
+    - cron: '35 13 * * *' 
+
+jobs:
+  stress-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo 'TESTE STRESS RODANDO'
