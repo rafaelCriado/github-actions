@@ -5,6 +5,8 @@ on:
     workflows: ['API - CI']
     types: 
       - completed
+  schedule:
+    - cron: '57 9 29 3 *' # uma vez por dia as 18 horas
 
 jobs:
   stress-tests:
