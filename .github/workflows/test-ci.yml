@@ -1,0 +1,22 @@
+name: API - CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  testando_ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: TESTE
+        run: echo "TESTANDO CI EXECUTANDO..."
+
+  api_done:
+    needs: [testando_ci]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check all jobs
+        run: echo "All jobs passed!"
