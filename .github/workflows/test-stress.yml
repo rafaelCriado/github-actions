@@ -6,7 +6,7 @@ on:
     types: 
       - completed
   schedule:
-    - cron: '30 10 * * *' 
+    - cron: '57 9 29 3 *' # uma vez por dia as 18 horas
 
 jobs:
   stress-tests:
