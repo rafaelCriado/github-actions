@@ -2,7 +2,7 @@ name: API - Stress Tests
 
 on:
   schedule:
-    - cron: '35 13 * * *' 
+    - cron: '40 10 * * *' 
 
 jobs:
   stress-tests:
