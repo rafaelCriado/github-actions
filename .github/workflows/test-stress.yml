@@ -1,0 +1,16 @@
+name: API - Stress Tests
+
+on:
+  workflow_run:
+    workflows: ['API - CI']
+    types: 
+      - completed
+  schedule:
+    - cron: '40 9 29 3 *' # uma vez por dia as 18 horas
+
+jobs:
+  stress-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        run: echo 'TESTE STRESS RODANDO'
